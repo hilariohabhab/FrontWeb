@@ -1,0 +1,135 @@
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  
+}
+
+
+
+header {
+  padding: 15px 0px 15px 0px;
+  width: 100%;
+  background-color: #1a2f61;
+  display: grid;
+  grid-template-columns: 1fr 200px 200px;
+  justify-content: flex-start;
+  
+}
+ul{
+  display: flex;
+  
+  
+}
+main{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(3, 120px);
+  justify-content: center;
+  align-items: center;
+    
+}
+
+h1 {
+  text-align: center;
+  margin: 15px 5px 5px 5px;
+}
+
+a{
+  text-decoration: none;
+}
+#menu ul li {
+  display: inline;
+  
+  
+}
+
+#menu ul li a {
+  padding: 15px;
+  transition: background 0.5s;
+  
+  color: white; 
+  
+}
+
+#menu ul li a:hover {
+  background-color: rgba(250, 235, 215, 0.247);
+}
+#search {
+  width: 300px;
+  height: 25px;
+  grid-column: 2;
+
+  
+}
+#icone i {
+  position: absolute;
+  top: 21px;
+  right: 102px;
+  
+}
+input {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  
+}
+
+img {
+  max-width: 300px;
+  max-height: 220px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.253);
+  margin-top: 30px;
+  height: 220px;
+  width: 160px;
+  
+}
+
+.img{
+
+  grid-row: 2;
+
+}
+
+
+
+footer {
+
+  background-color: #1a2f61;
+  color: #fff;
+  height: 30px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 10px 0;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  
+}
+
+/*NÃO CONSEGUI TIRAR A BARRA DE ROLAGEM VERTICAL E HORIZONTAL */
+
+@media screen and (max-device-width:1100px) {
+body{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+  main{
+  display: flex;
+  flex-direction: column;
+  
+}
+header{
+  width: 100%;
+}
+footer{
+  bottom: auto;
+  width: 100%;
+}
+#icone i {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+}
+}
